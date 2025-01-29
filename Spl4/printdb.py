@@ -1,8 +1,13 @@
 from persistence import *
 import sqlite3
-
+import inspect
 def main():
     conn = sqlite3.connect("bgumart.db")
+    cursor=conn.cursor()
+    employees = Dao(Employee, conn)
+    suppliers = Dao(Supplier, conn)
+    products = Dao(Product, conn)
+    branches = Dao(Branche, conn)
     cursor = conn.cursor()
 
     # Print Activities table
@@ -10,21 +15,17 @@ def main():
     cursor.execute('''
         SELECT *
         FROM activities
-        ORDER BY "date"
+        ORDER BY date
     ''')
     for row in cursor.fetchall():
         print(row)
     print()
-
     # Print other tables: branches, employees, products, suppliers
-    for table in ['branches', 'employees', 'products', 'suppliers']:
-        print(table.capitalize())
-        cursor.execute(f'''
-            SELECT *
-            FROM {table}
-            ORDER BY id
-        ''')
-        for row in cursor.fetchall():
+    for table in [branches,employees,products,suppliers,products]:
+        print((table._table_name).capitalize())
+        result=table.find_all()
+        
+        for row in result:
             print(row)
         print()
 

@@ -9,8 +9,8 @@ class Employee:
         self.salary = salary
         self.branche = branche
 
-    def __repr__(self):
-        return f"Employee({self.id}, '{self.name}', {self.salary}, {self.branche})"
+    def __str__(self):
+        return f"({self.id}, '{self.name}', {self.salary}, {self.branche})"
 
 
 class Supplier:
@@ -19,8 +19,8 @@ class Supplier:
         self.name = name
         self.contact_information = contact_information
 
-    def __repr__(self):
-        return f"Supplier({self.id}, '{self.name}', '{self.contact_information}')"
+    def __str__(self):
+        return f"({self.id}, '{self.name}', '{self.contact_information}')"
 
 
 class Product:
@@ -30,8 +30,8 @@ class Product:
         self.price = price
         self.quantity = quantity
 
-    def __repr__(self):
-        return f"Product({self.id}, '{self.description}', {self.price}, {self.quantity})"
+    def __str__(self):
+        return f"({self.id}, '{self.description}', {self.price}, {self.quantity})"
 
 
 class Branche:
@@ -40,8 +40,8 @@ class Branche:
         self.location = location
         self.number_of_employees = number_of_employees
 
-    def __repr__(self):
-        return f"Branche({self.id}, '{self.location}', {self.number_of_employees})"
+    def __str__(self):
+        return f"({self.id}, '{self.location}', {self.number_of_employees})"
 
 
 class Activitie:
@@ -51,8 +51,8 @@ class Activitie:
         self.activator_id = activator_id
         self.date = date
 
-    def __repr__(self):
-        return f"Activitie({self.product_id}, {self.quantity}, {self.activator_id}, '{self.date}')"
+    def __str__(self):
+        return f"({self.product_id}, {self.quantity}, {self.activator_id}, '{self.date}')"
 
  
 #Repository
