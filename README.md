@@ -171,13 +171,12 @@ python3 printdb.py
 
 ---
 
-## 👨‍💻 Authors
+## 👨‍💻 Author
 
-* \[Your Name]
-* \[Partner Name, if applicable]
+* Saar Damari
 
 Ben-Gurion University
-Software Engineering / Python & Databases Course
+Software Engineering / System Programming Course
 Year: 2025
 
 ---
