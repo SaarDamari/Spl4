@@ -1,9 +1,5 @@
-Certainly! Below is the complete content formatted as a full README.md file. You can copy and paste this into your repository's README.md file:
 
-README.md
-
-````markdown
-# 🛒 BGU Mart – Supermarket Chain Management System
+## 🛒 BGU Mart – Supermarket Chain Management System
 
 A lightweight inventory and operations management system for supermarket chains, developed as part of an academic project at Ben-Gurion University.  
 Built with Python 3 and SQLite3, BGU Mart allows full CRUD interaction with products, employees, suppliers, branches, and activity logs via command-line modules.
